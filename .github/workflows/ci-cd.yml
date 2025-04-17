@@ -15,7 +15,7 @@ jobs:
 
       - name: Create necessary directory if it doesn't exist
         run: |
-          mkdir D:\a\pipeline-SpringBoot_TPESE-
+          mkdir D:\a\pipeline-SpringBoot
           echo "Directory created successfully."
 
       - name: Set up JDK 17
