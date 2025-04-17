@@ -3,7 +3,7 @@ name: Simple CI/CD for Spring Boot
 on:
   push:
     branches:
-      - master   
+      - master
 
 jobs:
   build:
@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Create necessary directory if it doesn't exist
+        run: |
+          mkdir -p D:/a/pipeline-SpringBoot_TPESE-
+          echo "Directory created successfully."
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
