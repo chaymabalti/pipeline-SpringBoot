@@ -1,0 +1,1 @@
+Ce projet montre un exemple de pipeline CI/CD avec GitHub Actions.
