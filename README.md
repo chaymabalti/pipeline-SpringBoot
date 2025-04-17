@@ -1,1 +1,1 @@
-Ce projet montre un exemple de pipeline CI/CD avec GitHub Actions.
+Ligne ajoutée pour tester GitHub Actions.
