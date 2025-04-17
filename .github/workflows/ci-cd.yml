@@ -1,9 +1,9 @@
-ame: Simple CI/CD for Spring Boot
+name: Simple CI/CD for Spring Boot
 
 on:
   push:
     branches:
-      - main
+      - master   
 
 jobs:
   build:
