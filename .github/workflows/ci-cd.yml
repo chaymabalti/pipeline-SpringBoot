@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - master  # Ajouté pour prendre en charge les deux branches possibles
+      - master
 
 jobs:
   build:
