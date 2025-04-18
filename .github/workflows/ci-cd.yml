@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - master  # Pour que ça marche même si tu travailles sur 'master'
+      - master  # Ajouté pour prendre en charge les deux branches possibles
 
 jobs:
   build:
@@ -21,13 +21,13 @@ jobs:
           distribution: 'temurin'
 
       - name: Build and test with Maven
-        run: mvn -f demo/pom.xml clean install -DskipTests=false
+        run: mvn clean install -DskipTests=false
 
       - name: Archive JAR
         uses: actions/upload-artifact@v4
         with:
           name: spring-boot-app
-          path: demo/target/*.jar
+          path: target/*.jar
 
       - name: Print success message
         run: echo "Build and tests completed successfully!"
