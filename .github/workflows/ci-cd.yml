@@ -3,7 +3,8 @@ name: Simple CI/CD for Spring Boot
 on:
   push:
     branches:
-      - master
+      - main
+      - master  # Pour que ça marche même si tu travailles sur 'master'
 
 jobs:
   build:
@@ -29,4 +30,4 @@ jobs:
           path: demo/target/*.jar
 
       - name: Print success message
-        run: echo "✅ Build and tests completed successfully!"
+        run: echo "Build and tests completed successfully!"
